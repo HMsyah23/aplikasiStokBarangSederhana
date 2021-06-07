@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>stokBarang</RootNamespace>
+    <AssemblyName>stokBarang</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>stokBarang.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>stokBarang.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>stokBarang.formUtama</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBkoneksi.vb" />
+    <Compile Include="formAlat.Designer.vb">
+      <DependentUpon>formAlat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formAlat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBarangKeluar.Designer.vb">
+      <DependentUpon>formBarangKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formBarangKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBarangMasuk.Designer.vb">
+      <DependentUpon>formBarangMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formBarangMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHome.Designer.vb">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLaporan.Designer.vb">
+      <DependentUpon>formLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPengguna.Designer.vb">
+      <DependentUpon>formPengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUtama.Designer.vb">
+      <DependentUpon>formUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="stokBarangDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stokBarangDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stokBarangDBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stokBarangDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="stokBarangDBDataSet1.vb">
+      <DependentUpon>stokBarangDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="formAlat.resx">
+      <DependentUpon>formAlat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBarangKeluar.resx">
+      <DependentUpon>formBarangKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBarangMasuk.resx">
+      <DependentUpon>formBarangMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHome.resx">
+      <DependentUpon>formHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLaporan.resx">
+      <DependentUpon>formLaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPengguna.resx">
+      <DependentUpon>formPengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUtama.resx">
+      <DependentUpon>formUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBarangMasuk.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanAlat.rdlc" />
+    <EmbeddedResource Include="LaporanBarangKeluar.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportBarangKeluar.rdlc" />
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="appDBDataSet.xsc">
+      <DependentUpon>appDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appDBDataSet.xss">
+      <DependentUpon>appDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="stokBarangDBDataSet.xsc">
+      <DependentUpon>stokBarangDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="stokBarangDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stokBarangDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stokBarangDBDataSet.xss">
+      <DependentUpon>stokBarangDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="stokBarangDBDataSet1.xsc">
+      <DependentUpon>stokBarangDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="stokBarangDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>stokBarangDBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stokBarangDBDataSet1.xss">
+      <DependentUpon>stokBarangDBDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barang masuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barang keluar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perpustakaan_Digital_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alat-Tulis-Kantor-Terbaik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd-negeri-gambiranom-jogja-logo.png" />
+    <Content Include="stokBarangDB.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

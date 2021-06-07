@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "stokBarang", "stokBarang.vbproj", "{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ATKInstaller", "..\ATKInstaller\ATKInstaller.vdproj", "{19D39BF1-5BA8-4405-80B6-E74DA2F9ABAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA529EA-E782-4C4B-8756-8EDC300AE5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D39BF1-5BA8-4405-80B6-E74DA2F9ABAB}.Debug|Any CPU.ActiveCfg = Debug
+		{19D39BF1-5BA8-4405-80B6-E74DA2F9ABAB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A501E57-58C4-42DB-8794-243072605BA0}
+	EndGlobalSection
+EndGlobal
